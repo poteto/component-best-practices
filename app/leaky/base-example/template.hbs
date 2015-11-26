@@ -1,0 +1,16 @@
+<code>#{{elementId}}</code>
+<h3>Available sizes</h3>
+<ul>
+  {{#each sizes as |size|}}
+    <li>{{size}}</li>
+  {{/each}}
+</ul>
+
+<div class="form-group">
+  {{one-way-input
+      class="form-control"
+      value=null
+      update=(action "noop")
+      onenter=(action "addSize")
+  }}
+</div>
