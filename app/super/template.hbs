@@ -1,0 +1,18 @@
+<h1>Don't forget <code>super</code></h1>
+<p class="lead">When overrriding framework methods (or extended Component methods), call <code>this._super(...arguments);</code>. We do this because certain methods need to setup certain things, and overriding them without a <code>super</code> call will prevent that, leading to unexpected behavior.</p>
+
+<div class="row">
+  <div class="col-md-6">
+    <h2>Bad</h2>
+    <p>This component simply doesn't work, and throws a <code>TypeError</code>.</p>
+
+    {{super/bad-example}}
+  </div>
+
+  <div class="col-md-6">
+    <h2>Good</h2>
+    <p>This component works as expected.</p>
+
+    {{super/good-example}}
+  </div>
+</div>

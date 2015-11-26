@@ -1,0 +1,25 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Seed</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {{#each cache as |cached|}}
+      <tr>
+        <td>{{cached.key}}</td>
+        <td>{{cached.value}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+{{one-way-input
+    class="form-control"
+    value=null
+    update=(action "noop")
+    onenter=(action "find")
+    placeholder="Generate with seed"
+}}

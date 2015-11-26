@@ -1,19 +1,20 @@
 <h1>Declaring Objects or Arrays as Component Properties</h1>
+<p class="lead">Don't declare arrays or objects directly on Components. Instead, add them on <code>init</code>. This is so we can ensure that each instance of the Component has its own independent state.</p>
 
 <div class="row">
   <div class="col-md-6">
     <h2>Bad</h2>
     <p>All instances of these components share state.</p>
 
-    {{leaky/bad-example}}
-    {{leaky/bad-example}}
+    {{leaky/bad-example name="Tom Dale T-Shirt"}}
+    {{leaky/bad-example name="Yehuda Katz T-Shirt"}}
   </div>
 
   <div class="col-md-6">
     <h2>Good</h2>
     <p>All instances of these components have independent state.</p>
 
-    {{leaky/good-example}}
-    {{leaky/good-example}}
+    {{leaky/good-example name="EmberSherpa T-Shirt" sizes="Small Large"}}
+    {{leaky/good-example name="Sugarpirate T-Shirt" sizes="Small Medium"}}
   </div>
 </div>

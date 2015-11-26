@@ -1,5 +1,5 @@
 <code>#{{elementId}}</code>
-<h3>Available sizes</h3>
+<h3>Available sizes for {{name}}</h3>
 <ul>
   {{#each sizes as |size|}}
     <li>{{size}}</li>
@@ -12,5 +12,6 @@
       value=null
       update=(action "noop")
       onenter=(action "addSize")
+      placeholder="Add a size..."
   }}
 </div>

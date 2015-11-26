@@ -7,6 +7,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('leaky');
+  this.route('super');
 });
 
 export default Router;

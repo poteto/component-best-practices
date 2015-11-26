@@ -1,1 +1,9 @@
+{{#if (not-eq currentRouteName "index")}}
+  <div class="back-to-index">
+    {{#link-to "index"}}
+      {{emoji-icon "arrow_up"}}
+    {{/link-to}}
+  </div>
+{{/if}}
+
 {{outlet}}
