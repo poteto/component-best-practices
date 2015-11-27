@@ -1,0 +1,18 @@
+<h1>Jumpy input cursors</h1>
+<p class="lead">Trying to use a native text input? You might encounter this strange bug.</p>
+
+<div class="row">
+  <div class="col-md-6">
+    <h2>Bad</h2>
+    <p>Try adding a space in the middle of the word, and watch the cursor jump around.</p>
+
+    <input type="text" class="form-control" value={{foo}} oninput={{action (mut foo) value="target.value"}}>
+  </div>
+
+  <div class="col-md-6">
+    <h2>Good</h2>
+    <p>Use the <code>ember-one-way-input</code> addon instead.</p>
+
+    {{one-way-input class="form-control" value=foo update=(action (mut foo))}}
+  </div>
+</div>
