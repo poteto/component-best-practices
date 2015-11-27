@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-md-12">
+    <form {{action this.attrs.findSubreddit subredditName on="submit"}} class="form">
+      <div class="form-group">
+        {{one-way-input
+            class="form-control"
+            placeholder="Find posts from a subreddit..."
+            value=subredditName
+            update=(action (mut subredditName))
+        }}
+      </div>
+
+      <button class="btn" {{action this.attrs.findSubreddit subredditName "top"}}>Find Top Posts</button>
+    </form>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-md-12">
+    {{closures/good-example/top-posts
+        tagName="ul"
+        class="list-unstyled"
+        posts=posts
+        selectPost=this.attrs.selectPost
+    }}
+  </div>
+</div>
