@@ -19,6 +19,7 @@
   "author": "Lauren Tan",
   "license": "MIT",
   "devDependencies": {
+    "body-parser": "^1.14.1",
     "broccoli-asset-rev": "^2.2.0",
     "ember-bootstrap": "0.5.0",
     "ember-cli": "1.13.13",
@@ -35,11 +36,14 @@
     "ember-cli-release": "0.2.8",
     "ember-cli-sri": "^1.2.0",
     "ember-cli-uglify": "^1.2.0",
-    "ember-data": "2.3.0-beta.1",
+    "ember-data": "2.2.1",
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
     "ember-moment": "4.1.0",
     "ember-one-way-input": "0.3.0",
-    "ember-truth-helpers": "1.2.0"
+    "ember-truth-helpers": "1.2.0",
+    "express": "^4.13.3",
+    "glob": "^4.5.3",
+    "morgan": "^1.6.1"
   }
 }

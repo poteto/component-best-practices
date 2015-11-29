@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('observers');
   this.route('dom-attr');
   this.route('closures');
+  this.route('ddau');
 });
 
 export default Router;
