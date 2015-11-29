@@ -26,7 +26,7 @@
 
       <tbody>
         {{#each lifecycleEvents.renderEvents as |renderEvent|}}
-          <tr>
+          <tr title={{renderEvent.loggedAt}}>
             <td>{{renderEvent.id}}</td>
             <td><code>{{renderEvent.eventName}}</code></td>
             <td>{{math-tofixed renderEvent.timing 2}}</td>
@@ -47,7 +47,7 @@
 
       <tbody>
         {{#each lifecycleEvents.attrEvents as |attrEvent|}}
-          <tr>
+          <tr title={{attrEvent.loggedAt}}>
             <td>{{attrEvent.id}}</td>
             <td><code>{{attrEvent.eventName}}</code></td>
             <td><pre>{{json-stringify attrEvent.params 2}}</pre></td>

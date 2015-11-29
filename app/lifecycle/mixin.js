@@ -59,11 +59,16 @@ export default Mixin.create({
     this._logRenderEvent('didRender');
   },
 
+  willDestroy() {
+    this._logRenderEvent('willDestroy', false);
+  },
+
   _logEvent(eventName, params) {
     get(this, 'lifecycleEvents.attrEvents').pushObject({
       eventName,
       params,
       id: this.elementId,
+      loggedAt: new Date()
     });
   },
 
@@ -72,7 +77,8 @@ export default Mixin.create({
     get(this, 'lifecycleEvents.renderEvents').pushObject({
       eventName,
       id: this.elementId,
-      timing: isTimed ? this._finishedRender - this._startedRender : null
+      timing: isTimed ? this._finishedRender - this._startedRender : null,
+      loggedAt: new Date()
     });
   }
 });
