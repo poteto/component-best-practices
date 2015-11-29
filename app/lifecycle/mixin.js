@@ -62,8 +62,8 @@ export default Mixin.create({
   _logEvent(eventName, params) {
     get(this, 'lifecycleEvents.attrEvents').pushObject({
       eventName,
+      params,
       id: this.elementId,
-      params: stringify(params, null, 2)
     });
   },
 

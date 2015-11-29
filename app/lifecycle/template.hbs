@@ -50,7 +50,7 @@
           <tr>
             <td>{{attrEvent.id}}</td>
             <td><code>{{attrEvent.eventName}}</code></td>
-            <td><pre>{{attrEvent.params}}</pre></td>
+            <td><pre>{{json-stringify attrEvent.params 2}}</pre></td>
           </tr>
         {{/each}}
       </tbody>
