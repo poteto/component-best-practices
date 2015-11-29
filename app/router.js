@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('dom-attr');
   this.route('closures');
   this.route('ddau');
+  this.route('lifecycle');
 });
 
 export default Router;
