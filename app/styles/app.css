@@ -1,5 +1,17 @@
-body, html {
-  margin: 20px;
+.hero {
+  background: linear-gradient(to bottom,#563d7c 0,#6f5499 100%);
+  min-height: 25vh;
+  text-align: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.hero h1 {
+  color: white;
+}
+
+.hero .lead {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .block {
@@ -7,6 +19,15 @@ body, html {
   background: rgba(0, 0, 0, 0.05);
   padding: 15px;
   margin-bottom: 30px;
+}
+
+.toc li {
+  font-size: 1.3em;
+  line-height: 2em;
+}
+
+.main {
+  padding-top: 50px;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic");/*!
