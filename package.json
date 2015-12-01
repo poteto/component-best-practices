@@ -10,7 +10,8 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember test"
+    "test": "ember test",
+    "deploy-gh": "./deploy-gh.sh"
   },
   "repository": "https://www.github.com/poteto/component-best-practices",
   "engines": {
