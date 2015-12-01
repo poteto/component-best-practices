@@ -34,6 +34,14 @@
   margin-top: 30px;
 }
 
+.menu .btn {
+  margin-right: 30px;
+}
+
+.menu .btn:last-child {
+  margin-right: 0;
+}
+
 .svg-small {
   height: 1em;
 }
