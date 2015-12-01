@@ -30,8 +30,16 @@
   padding-top: 50px;
 }
 
-.back-to-index {
+.menu {
   margin-top: 30px;
+}
+
+.svg-small {
+  height: 1em;
+}
+
+.svg-white {
+  fill: white;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic");/*!

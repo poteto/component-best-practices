@@ -15,14 +15,15 @@
 <div class="container">
   <div class="row">
     {{#if (not-eq currentRouteName "index")}}
-      <div class="back-to-index">
+      <div class="menu">
         {{#link-to "index" tagName="button" class="btn btn-primary btn-lg"}}
           <span>😨 Back</span>
         {{/link-to}}
+        {{view-source currentRouteName=currentRouteName}}
       </div>
     {{/if}}
   </div>
   <div class="row">
-    {{outlet}}
+    {{liquid-outlet}}
   </div>
 </div>
