@@ -1,7 +1,7 @@
 {{#if (not-eq currentRouteName "index")}}
   <div class="back-to-index">
-    {{#link-to "index"}}
-      {{emoji-icon "arrow_up"}}
+    {{#link-to "index" tagName="button" class="btn btn-primary btn-lg"}}
+      <span>😨 Back</span>
     {{/link-to}}
   </div>
 {{/if}}

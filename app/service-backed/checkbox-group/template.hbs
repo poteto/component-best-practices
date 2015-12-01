@@ -1,0 +1,14 @@
+{{#each group as |item|}}
+  <div class="checkbox">
+    <label for={{concat "item-" item.id}}>
+      {{one-way-input
+          id=(concat "item-" item.id)
+          class="checkbox"
+          type="checkbox"
+          value=(contains checkboxGroup.selectedItems item)
+          checked=(contains checkboxGroup.selectedItems item)
+          update=(action "check" checkboxGroup.selectedItems item)
+      }} {{item.name}} <span class="label label-default">{{item.species}}</span>
+    </label>
+  </div>
+{{/each}}

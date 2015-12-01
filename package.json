@@ -21,12 +21,10 @@
   "devDependencies": {
     "body-parser": "^1.14.1",
     "broccoli-asset-rev": "^2.2.0",
-    "ember-bootstrap": "0.5.0",
     "ember-cli": "1.13.13",
     "ember-cli-app-version": "^1.0.0",
     "ember-cli-babel": "^5.1.5",
     "ember-cli-dependency-checker": "^1.1.0",
-    "ember-cli-emoji": "0.0.3",
     "ember-cli-htmlbars": "^1.0.1",
     "ember-cli-htmlbars-inline-precompile": "^0.3.1",
     "ember-cli-ic-ajax": "0.2.4",

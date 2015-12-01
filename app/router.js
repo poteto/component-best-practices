@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('closures');
   this.route('ddau');
   this.route('lifecycle');
+  this.route('service-backed');
 });
 
 export default Router;

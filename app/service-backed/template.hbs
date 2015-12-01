@@ -1,0 +1,34 @@
+<h1>Service backed components</h1>
+<p class="lead">When routable components land, singleton logic will no longer live in a controller. Instead, we can move them to services.</p>
+
+<div class="row">
+  <div class="col-md-3">
+    <h2>Select Animals</h2>
+    <p>The selection persists even when the route is exited and the component torn down.</p>
+
+    {{service-backed/checkbox-group group=animals selectedGroup=selectedGroup}}
+  </div>
+
+  <div class="col-md-9">
+    <h3>Selected Animals</h3>
+    <table class="table block">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Species</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {{#each checkboxGroup.selectedItems as |animal|}}
+          <tr>
+            <td>{{animal.id}}</td>
+            <td>{{animal.species}}</td>
+            <td>{{animal.name}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>
