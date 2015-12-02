@@ -39,6 +39,7 @@
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
     "ember-inline-svg": "0.1.5",
+    "ember-metrics": "0.5.2",
     "ember-moment": "4.1.0",
     "ember-one-way-input": "0.3.0",
     "ember-truth-helpers": "1.2.0",

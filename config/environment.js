@@ -19,7 +19,17 @@ module.exports = function(environment) {
     },
     sassOptions: {
       includePaths: ['bower_components/materialize/sass']
-    }
+    },
+
+    metricsAdapters: [
+      {
+        name: 'GoogleAnalytics',
+        environments: ['production'],
+        config: {
+          id: 'UA-70928418-1'
+        }
+      }
+    ]
   };
 
   if (environment === 'development') {
