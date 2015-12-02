@@ -14,6 +14,7 @@ Router.map(function() {
   this.route('ddau');
   this.route('lifecycle');
   this.route('service-backed');
+  this.route('use-helpers');
 });
 
 export default Router;
