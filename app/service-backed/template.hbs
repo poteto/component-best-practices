@@ -6,7 +6,11 @@
     <h2>Select Animals</h2>
     <p>The selection persists even when the route is exited and the component torn down.</p>
 
-    {{service-backed/checkbox-group group=animals selectedGroup=selectedGroup}}
+    {{service-backed/checkbox-group
+        group=animals
+        selectedItems=checkboxGroup.selectedItems
+        check=(action "check")
+    }}
   </div>
 
   <div class="col-md-9">
