@@ -7,7 +7,7 @@
           type="checkbox"
           value=(contains selectedItems item)
           checked=(contains selectedItems item)
-          update=(action this.attrs.check selectedItems item)
+          update=(action check selectedItems item)
       }} {{item.name}} <span class="label label-default">{{item.species}}</span>
     </label>
   </div>

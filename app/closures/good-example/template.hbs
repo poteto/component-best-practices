@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-12">
-    <form {{action this.attrs.findSubreddit subredditName on="submit"}} class="form">
+    <form {{action findSubreddit subredditName on="submit"}} class="form">
       <div class="form-group">
         {{one-way-input
             class="form-control"
@@ -10,7 +10,7 @@
         }}
       </div>
 
-      <button class="btn" {{action this.attrs.findSubreddit subredditName "top"}}>Find Top Posts</button>
+      <button class="btn" {{action findSubreddit subredditName "top"}}>Find Top Posts</button>
     </form>
   </div>
 </div>
@@ -21,7 +21,7 @@
         tagName="ul"
         class="list-unstyled"
         posts=posts
-        selectPost=this.attrs.selectPost
+        selectPost=selectPost
     }}
   </div>
 </div>

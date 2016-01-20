@@ -6,7 +6,6 @@ const {
   Mixin,
   get
 } = Ember;
-const { stringify } = JSON;
 
 function now() {
   return window.performance.now();
